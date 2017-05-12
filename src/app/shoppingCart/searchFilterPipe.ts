@@ -9,7 +9,7 @@ export class Filterlist implements PipeTransform {
       return allProducts;
     }
     return allProducts.filter(function(item:any){
-      return item.includes(searchProd)
+      return item.name.includes(searchProd)
     })
   }
 }
